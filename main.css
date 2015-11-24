@@ -1,74 +1,120 @@
-function get(page, cb) {
-  var modifiedURL = "https://crossorigin.me/" + page;
-  var xhr = new XMLHttpRequest();
-  xhr.addEventListener("readystatechange", function() {
-    if (xhr.readyState === 4) {
-      cb(xhr.response);
-    }
-  });
-  xhr.open("GET", modifiedURL, true);
-  xhr.send();
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 400;
 }
 
-function update(doc) {
-  var toc = document.getElementById("toc");
+/* Text */
 
-  // If doc, we're using this in production and doc is a document.
-  if (doc) {
-    var links = doc.querySelectorAll(".wiki-page-link");
-    var hrefs = [];
-    var texts = [];
-    for (var i = 0; i < links.length; i++) {
-      var link = links[i];
-      var href = "https://github.com" + link.getAttribute("href");
-      hrefs.push(href);
-      texts.push(link.textContent);
-    }
+code {
+  font-family: "Courier New";
+  background: rgba(200, 200, 200, 0.4);
+}
+
+pre code {
+  display: block;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+a {
+  color: #33AAEE;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* UI */
+
+.wiki-page-link {
+  display: block;
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+
+  background: #FFF;
+  border: 1px solid #EEE;
+  border-radius: 8px;
+  box-shadow: 0 0 2px rgba(0, 0, 233, 0.1);
+
+  color: black;
+  text-decoration: none !important;
+  cursor: pointer;
+
+  /* Ellipsis effect */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  transition: all 0.3s;
+}
+
+.wiki-page-link:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 233, 0.3);
+}
+
+.wiki-page-link:active {
+  background: #EEE;
+}
+
+#toc {
+  background: #F3F3F3;
+}
+
+#container {
+  padding: 40px;
+  box-sizing: border-box;
+  background: #EEEEEE;
+}
+
+/* Responsiveness */
+
+@media all and (min-width: 500px) {
+  #toc {
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 180px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
   }
 
-  // Otherwise, we're testing and shall use placeholder values.
-  else {
-    var hrefs = ["#", "#", "#", "#"];
-    var texts = ["Hello World", "Home", "Orangutan", "This is a very long title"];
+  #container {
+    width: calc(100% - 180px);
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-
-  texts.forEach(function(text, i) {
-    var text = texts[i];
-    var href = hrefs[i];
-    var a = document.createElement("a");
-    a.setAttribute("href", href);
-    a.appendChild(document.createTextNode(text));
-    a.classList.add("wiki-page-link");
-
-    // When the user clicks on it, load the page related to it.
-    a.onclick = function(evt) {
-      evt.preventDefault();
-      loadPage(href);
-      return false;
-    };
-
-    toc.appendChild(a);
-  });
 }
 
-function loadPage(href) {
-  var container = document.getElementById("container");
-  get(href, function(res) {
-    var parser = new DOMParser();
-    var doc = parser.parseFromString(res, "text/html");
-    var wikiBody = doc.getElementById("wiki-body");
-    while (container.firstChild) {
-      container.removeChild(container.firstChild);
-    }
-    container.appendChild(wikiBody);
-  });
+@media all and (max-width: 499px) {
+  #toc {
+    padding: 20px;
+  }
 }
 
-get("https://github.com/liam4/scratch-api-unofficial-docs/wiki", function(res) {
-  var parser = new DOMParser();
-  var doc = parser.parseFromString(res, "text/html");
-  update(doc);
-});
+@media all and (max-width: 300px) {
+  #container {
+    padding: 10px;
+  }
+}
 
+/* Etc. */
 
-// update();
+::-moz-selection {
+  background: rgba(30, 180, 240, 0.5);
+}
+
+::selection {
+  background: rgba(30, 180, 240, 0.5);
+}
