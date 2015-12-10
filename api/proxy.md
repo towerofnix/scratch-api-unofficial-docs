@@ -99,3 +99,13 @@ Note that `actor` isn't a [User Object](users.md#user-object).
 ### `GET /proxy/users/<name>/activity`
 
 Gets activity events that appear in the user's activity feed. Returns an array of [activity event objects](#activity-event-object).
+
+### `GET /proxy/users/<name>/activity/count`
+
+Gets the number of messages the user has, in this format:
+
+```
+{
+    "msg_count": /* Messages the user currently has */
+}
+```
