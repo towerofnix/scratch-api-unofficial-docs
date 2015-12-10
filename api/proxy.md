@@ -31,7 +31,15 @@ Note that `actor` isn't a [User Object](users.md#user-object).
 
 ```
 {
-    "followee_username": /* Username of the user who is being followed */
+    "followee_username": /* Username of the user who was followed */
+}
+```
+
+##### 1 - Studio follow
+
+```
+{
+    "studio_title": /* The title of the studio that was followed */
 }
 ```
 
