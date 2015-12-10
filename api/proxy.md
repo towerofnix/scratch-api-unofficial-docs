@@ -20,4 +20,11 @@ Gets the number of messages the user has, in this format:
 
 ### `GET /proxy/users/<id>/featured`
 
-Gets projects on the homepage that are featured to user personally. Returns an array of [project objects](definitions/project_object.md).
+Gets projects on the homepage that are featured to user personally. Returns an object of which each of its properties' values are arrays of [project objects](definitions/project_object.md):
+
+```
+{
+    "custom_projects_by_following": /* Projects created by users the user is following */
+    "custom_projects_loved_by_following": /* Projects loved by users the user is following */
+}
+```
