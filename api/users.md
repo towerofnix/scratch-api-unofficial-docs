@@ -1,6 +1,6 @@
 The user API contains utilities for working with user pages.
 
-### User Object
+### [User Object](id:user-object)
 
 A user object looks like this:
 
@@ -21,11 +21,11 @@ A user object looks like this:
 }
 ```
 
-### `GET /users/<username>`
+### [`GET /users/<username>`](id:users-username)
 
 Gets metadata about <u>username</u>. Returns a [user object](#user-object).
 
-### `GET /users/<username>/following`
+### [`GET /users/<username>/following`](id:users-username-following)
 
 Gets the users that <u>username</u> is following. Returns an array of [user objects](#user-object):
 
