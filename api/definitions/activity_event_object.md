@@ -1,4 +1,4 @@
-### [Activity Event Object](id:activity-event-object)
+# Activity Event Object
 
 An activity event object looks like this:
 

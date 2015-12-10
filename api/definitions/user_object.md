@@ -1,4 +1,4 @@
-### [User Object](id:user-object)
+# User Object
 
 A user object looks like this:
 

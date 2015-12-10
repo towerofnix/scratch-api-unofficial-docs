@@ -1,3 +1,5 @@
+# `/proxy/` API
+
 The proxy API contains many utilities, generally returning content likely to be modified frequently.
 
 ## [`/proxy/users`](id:proxy-users)
@@ -18,4 +20,4 @@ Gets the number of messages the user has, in this format:
 
 ### `GET /proxy/users/<id>/featured`
 
-Gets projects on the homepage that are featured to user personally.
+Gets projects on the homepage that are featured to user personally. Returns an array of [project objects](definitions/project_object.md).
