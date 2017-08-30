@@ -13,3 +13,15 @@ Gets the users that the user is following. Returns an array of [user objects](de
 ### [`GET /users/<username>/followers`](id:users-username-followers)
 
 Gets the users that are following the user. Returns an array of [user objects](definitions/user_object.md). [Limited](../etc/limits_and_offsets.md) to 20 results per request.
+
+### [`GET /users/<username>/messages/count`](id:users-username-messages-count)
+
+Gets the number of notifications the user currently has (this is the bubble-number displayed in the navigation bar).
+
+Returns an object in this format:
+
+```
+{
+    "count": /* Number of messages the user currently has */
+}
+```
