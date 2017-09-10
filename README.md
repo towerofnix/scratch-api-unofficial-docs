@@ -14,7 +14,7 @@ The Scratch API is an online API for using information from [Scratch](https://sc
 
 ## How can you use the Scratch API?
 
-Simple enough - say you want to get the number of projects currently made. You'd just send a `GET` request to the API page `/projects/count/all`. This can be as simple as opening the API page in your browser: [`http://api-staging.scratch.mit.edu/projects/count/all`](http://api-staging.scratch.mit.edu/projects/count/all).
+Simple enough - say you want to get the number of projects currently made. You'd just send a `GET` request to the API page `/projects/count/all`. This can be as simple as opening the API page in your browser: [`http://api.scratch.mit.edu/projects/count/all`](http://api.scratch.mit.edu/projects/count/all).
 
 Many of the things on the API are going to be more useful to program (or web) developers, but it can be fun for anybody just to look around and experiment with it.
 
