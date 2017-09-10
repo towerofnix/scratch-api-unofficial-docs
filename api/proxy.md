@@ -18,7 +18,7 @@ Gets the projects featured on the homepage. Returns an object of which each of i
 }
 ```
 
-Each item in that array is a project, and follows this format:
+Each item in any of those arrays is a project, and follows this format:
 
 ```
 {
