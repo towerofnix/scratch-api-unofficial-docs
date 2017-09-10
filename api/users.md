@@ -2,23 +2,23 @@
 
 The user API contains utilities for working with user pages.
 
-### [`GET /users/<username>`](id:users-username)
+### `GET /users/<username>`
 
 Gets metadata about the user. Returns a [user object](definitions/user_object.md).
 
-### [`GET /users/<username>/following`](id:users-username-following)
+### `GET /users/<username>/following`
 
 Gets the users that the user is following. Returns an array of [user objects](definitions/user_object.md). [Limited](../etc/limits_and_offsets.md) to 20 results per request.
 
-### [`GET /users/<username>/followers`](id:users-username-followers)
+### `GET /users/<username>/followers`
 
 Gets the users that are following the user. Returns an array of [user objects](definitions/user_object.md). [Limited](../etc/limits_and_offsets.md) to 20 results per request.
 
-### [`GET /users/<username>/messages`](id:users-username-messages-count)
+### `GET /users/<username>/messages`
 
 Gets the content of all messages the user has (including both read and unread ones). Returns an array of [message objects](definitions/message_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request. [Requires authentication.](../etc/authentication.md)
 
-### [`GET /users/<username>/messages/count`](id:users-username-messages-count)
+### `GET /users/<username>/messages/count`
 
 Gets the number of notifications the user currently has (this is the bubble-number displayed in the navigation bar).
 
