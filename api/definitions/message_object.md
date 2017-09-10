@@ -6,7 +6,6 @@ A message object looks like this:
 {
     "id": /* Message ID */
     "datetime_created": /* The date of the notification */
-    "ip_address": /* ??? */
     "actor_username": /* The username of whoever acted (e.g. who loved your project) */
     "actor_id": /* The ID of whoever acted */
     "type": /* A message type */
