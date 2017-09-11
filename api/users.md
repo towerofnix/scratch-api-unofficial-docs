@@ -17,7 +17,7 @@ Gets the users that the user is following. Returns an array of [user objects](de
 
 ### `GET /users/<username>/following/users/projects`
 
-Gets a list of projects that have recently been shared by users that the given user is following. Returns an array of [project objects](definitions/project_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
+Gets a list of projects that have recently been shared by users that the given user is following. Returns an array of [project objects](definitions/project_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request. [Requires authentication.](../etc/authentication.md)
 
 ### `GET /users/<username>/messages`
 
