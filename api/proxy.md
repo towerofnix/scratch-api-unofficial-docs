@@ -1,6 +1,6 @@
 # `/proxy/` API
 
-The proxy API contains many utilities, generally returning content likely to be modified frequently.
+The proxy API contains many utilities. The code for each endpoint under the proxy API interacts with the old Scratch API system; essentially, the proxy API is used for parts of the Scratch API which haven't yet been migrated.
 
 ### `GET /proxy/featured`
 
@@ -47,6 +47,8 @@ Gets the number of messages the user has, in this format:
     "msg_count": /* Messages the user currently has */
 }
 ```
+
+(This endpoint is deprecated in favor of [`/users/<name>/messages/count`](users.md#get-usersusernamemessagescount).)
 
 ### `GET /proxy/users/<id>/featured`
 
