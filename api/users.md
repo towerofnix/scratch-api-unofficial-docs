@@ -8,7 +8,9 @@ Gets metadata about the user. Returns a [user object](definitions/user_object.md
 
 ### `GET /users/<username>/projects`
 
-Gets a list of projects that have recently been shared by the user. Returns an array of [project objects](definitions/project_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
+Gets a list of projects that have been shared by the user. Note that it returns oldest projects first; use [`offset`](../etc/limits_and_offsets.md) to find more recent projects.
+
+Returns an array of [project objects](definitions/project_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
 
 ### `GET /users/<username>/favorites`
 
