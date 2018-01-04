@@ -6,6 +6,14 @@ The user API contains utilities for working with user pages.
 
 Gets metadata about the user. Returns a [user object](definitions/user_object.md).
 
+### `GET /users/<username>/projects`
+
+Gets a list of projects that have recently been shared by the user. Returns an array of [project objects](definitions/project_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
+
+### `GET /users/<username>/favorites`
+
+Gets a list of projects that have recently been favorited by the user. Returns an array of [project objects](definitions/project_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
+
 ### `GET /users/<username>/followers`
 
 Gets the users that are following the user. Returns an array of [user objects](definitions/user_object.md). [Limited](../etc/limits_and_offsets.md) to 20 results per request.
