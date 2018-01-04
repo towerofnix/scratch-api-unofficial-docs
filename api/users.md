@@ -18,11 +18,11 @@ Gets a list of projects that have recently been favorited by the user. Returns a
 
 ### `GET /users/<username>/followers`
 
-Gets the users that are following the user. Returns an array of [user objects](definitions/user_object.md). [Limited](../etc/limits_and_offsets.md) to 20 results per request.
+Gets the users that are following the user. Returns an array of [user objects](definitions/user_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
 
 ### `GET /users/<username>/following`
 
-Gets the users that the user is following. Returns an array of [user objects](definitions/user_object.md). [Limited](../etc/limits_and_offsets.md) to 20 results per request.
+Gets the users that the user is following. Returns an array of [user objects](definitions/user_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
 
 ### `GET /users/<username>/following/users/projects`
 
