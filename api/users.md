@@ -12,6 +12,10 @@ Gets a list of projects that have been shared by the user. Note that it returns 
 
 Returns an array of [project objects](definitions/project_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
 
+### `GET /users/<username>/projects/<projectID>`
+
+Gets a specific project created by the user, given its unique project ID. Returns a [project object](definitions/project_object.md).
+
 ### `GET /users/<username>/favorites`
 
 Gets a list of projects that have recently been favorited by the user. Returns an array of [project objects](definitions/project_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
