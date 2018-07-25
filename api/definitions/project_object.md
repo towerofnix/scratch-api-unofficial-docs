@@ -4,12 +4,12 @@ A project object looks like this:
 
 ```
 {
+    "id": /* The project's ID */
     "author": {
         "id": /* The author's user ID */
         "username": /* The author's username */
     }
-    "id": /* The project's ID */
-    "title": /* The name of the project */
+    "title": /* The title of the project */
     "instructions": /* The project's complete instructions (its Instructions field) */
     "description": /* The project's complete 'description' (its Notes and Credits field) */
     "image": /* The URL of the project's thumbnail image */
@@ -21,8 +21,9 @@ A project object looks like this:
     "stats": {
         "comments": /* The number of comments the project has */
         "loves": /* The number of love-its the project has */
-        "favorites": /* The number of favorits the project has */
+        "favorites": /* The number of favorites the project has */
         "views": /* The number of views the project has */
+        "remixes": /* The number of remixes the project has */
     }
     "remix": {
         "root": /* The 'root' project in a remix tree; the top level, which is not a remix (null if this project is not a remix) */
