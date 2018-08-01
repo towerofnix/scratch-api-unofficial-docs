@@ -1,6 +1,6 @@
 # API documentation
 
-Unofficial documentation for the Scratch API. See [root index](/README.md) for more information.
+Unofficial documentation for the Scratch API. See [root index](..) for more information.
 
 ## API pages
 

@@ -1,6 +1,6 @@
 # Miscellaneous information
 
-Pages with extra details on behavior of the Scratch API and how to make use of it. See [root index](/README.md) for more information.
+Pages with extra details on behavior of the Scratch API and how to make use of it. See [root index](..) for more information.
 
 ## Etc. pages
 
