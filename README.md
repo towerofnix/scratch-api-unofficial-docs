@@ -19,3 +19,5 @@ Simple enough - say you want to get the number of projects currently made. You'd
 Many of the things on the API are going to be more useful to program (or web) developers, but it can be fun for anybody just to look around and experiment with it.
 
 The output of a request is generally (supposed to be) a JSON object. Most programming languages have functions such as [`JSON.parse`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) to use the data.
+
+You can also use a built-by-the-community programming library like [scratch-api](https://www.npmjs.com/package/scratch-api) (Node.js) or [scratchapi](https://github.com/PolyEdge/scratchapi) (Python) to connect to the API.
