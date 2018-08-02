@@ -5,6 +5,7 @@ Unofficial documentation for the Scratch API. See [root index](..) for more info
 ## API pages
 
 * [`/comments` API](comments.md) - Read comments
+* [`/explore` and `/search` APIs](explore_search.md) - View trending and search for projects and studios
 * [`/news` API](news.md) - Fetch news entries
 * [`/projects` API](projects.md) - Fetch project metadata
 * [`/proxy` API](proxy.md) - Miscellaneous utilities
