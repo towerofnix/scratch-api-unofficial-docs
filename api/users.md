@@ -28,9 +28,17 @@ Gets the users that are following the user. Returns an array of [user objects](d
 
 Gets the users that the user is following. Returns an array of [user objects](definitions/user_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request.
 
+### `GET /users/<username>/following/studios/projects`
+
+Gets a list of projects that have recently been added to studios that the given user is following. Returns an array of [project objects](definitions/project_object.md). [Requires authentication.](../etc/authentication.md)
+
+### `GET /users/<username>/following/users/loves`
+
+Gets a list of projects that have recently been loved by users that the given user is following. Returns an array of [project objects](definitions/project_object.md). [Requires authentication.](../etc/authentication.md)
+
 ### `GET /users/<username>/following/users/projects`
 
-Gets a list of projects that have recently been shared by users that the given user is following. Returns an array of [project objects](definitions/project_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request. [Requires authentication.](../etc/authentication.md)
+Gets a list of projects that have recently been shared by users that the given user is following. Returns an array of [project objects](definitions/project_object.md). [Requires authentication.](../etc/authentication.md)
 
 ### `GET /users/<username>/messages`
 
