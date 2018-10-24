@@ -12,6 +12,8 @@ A project object looks like this:
     "title": /* The title of the project */
     "instructions": /* The project's complete instructions (its Instructions field) */
     "description": /* The project's complete 'description' (its Notes and Credits field) */
+    "is_published": /* Whether or not the project is shared */
+    "visibility": /* "notvisible" if the project is in the My Stuff trash section; "visible" otherwise */
     "image": /* The URL of the project's thumbnail image */
     "history": {
         "created": /* The timestamp when the project was first created (when the 'create' button was pressed) */
