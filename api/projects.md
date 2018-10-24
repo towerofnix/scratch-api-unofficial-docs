@@ -4,7 +4,7 @@ Returns data related to Scratch projects.
 
 ### `GET /projects/<id>`
 
-Gets metadata about the project. Returns a [project object](definitions/project_object.md).
+Gets metadata about the project. Returns a [project object](definitions/project_object.md). If the project has not been shared, this endpoint [requires authentication](../etc/authentication.md).
 
 ### `GET /projects/<id>/remixes`
 
