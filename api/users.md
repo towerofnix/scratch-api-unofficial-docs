@@ -16,7 +16,7 @@ Returns an array of [project objects](definitions/project_object.md). [Limited](
 
 Gets a specific project created by the user, given its unique project ID. Returns a [project object](definitions/project_object.md).
 
-### `GET /users/<username>/sudios/curate`
+### `GET /users/<username>/studios/curate`
 
 Gets a list of studios that the user curates. Returns an array of [studio objects](definitions/studio_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request, but returns 20 by default.
 
