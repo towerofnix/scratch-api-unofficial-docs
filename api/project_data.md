@@ -1,4 +1,4 @@
-# `projects. /` and `assets. /internalapi/asset` API
+# `projects.` and `assets.` API
 
 These retrieve all of the data and files needed for a scratch project/file.
 
