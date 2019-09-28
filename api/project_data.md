@@ -1,4 +1,4 @@
-# `projects.` and `assets.` API
+# `projects.` and `assets.` APIs
 
 These retrieve all of the data and files needed for a scratch project/file.
 
