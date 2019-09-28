@@ -10,6 +10,7 @@ Unofficial documentation for the Scratch API. See [root index](..) for more info
 * [`/projects` API](projects.md) - Fetch project metadata
 * [`/proxy` API](proxy.md) - Miscellaneous utilities
 * [`/users` API](users.md) - Fetch user information
+* [`projects.` and `assets.` APIs](project_data.md) - Fetch code and assets used in projects
 
 ### Object definitions
 
