@@ -44,6 +44,10 @@ Gets a list of projects that have recently been loved by users that the given us
 
 Gets a list of projects that have recently been shared by users that the given user is following. Returns an array of [project objects](definitions/project_object.md). [Requires authentication.](../etc/authentication.md)
 
+### `GET /users/<username>/following/users/activity`
+
+Gets activity events that appear in the user's activity feed. Returns an array of [activity event objects](definitions/activity_event_object.md).
+
 ### `GET /users/<username>/messages`
 
 Gets the content of all messages the user has (including both read and unread ones). Returns an array of [message objects](definitions/message_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request. [Requires authentication.](../etc/authentication.md)
