@@ -46,7 +46,7 @@ Gets a list of projects that have recently been shared by users that the given u
 
 ### `GET /users/<username>/following/users/activity`
 
-Gets events that show up in the "What's Happening" feed on the front page.  Returns an array of [activity event objects](definitions/activity_event_object.md).
+Gets events that show up in the "What's Happening" feed on the front page.  Returns an array of [activity event objects](definitions/activity_event_object.md).  [Requires authentication.](../etc/authentication.md)
 
 ### `GET /users/<username>/messages`
 
