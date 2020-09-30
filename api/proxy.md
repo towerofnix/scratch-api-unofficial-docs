@@ -36,7 +36,7 @@ Each item in any of those arrays is a project, and follows this format:
 
 ### `GET /proxy/users/<name>/activity`
 
-This endpoint is deprecated in favor of [`/users/<name>/following/users/activity`](users.md#get-usersusernamefollowingusersactivity).
+Depreciated.
 
 ### `GET /proxy/users/<name>/activity/count`
 
