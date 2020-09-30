@@ -36,7 +36,7 @@ Each item in any of those arrays is a project, and follows this format:
 
 ### `GET /proxy/users/<name>/activity`
 
-Gets activity events that appear in the user's activity feed. Returns an array of [activity event objects](definitions/activity_event_object.md).
+Depreciated.
 
 ### `GET /proxy/users/<name>/activity/count`
 
