@@ -9,4 +9,4 @@ A username object looks like this:
 }
 ```
 
-The value of `msg` property can be "username exists", "valid username", or "bad username".
+The value of the `msg` property can be "username exists", "valid username", or "bad username".
