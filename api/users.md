@@ -38,7 +38,7 @@ Gets a list of projects that have recently been added to studios that the given 
 
 ### `GET /users/<username>/following/users/loves`
 
-Gets a list of projects that have recently been loved by users that the given user is following. Returns an array of [project objects](definitions/project_object.md). [Requires authentication.](../etc/authentication.md)
+Gets a list of projects that have recently been loved by users that the given user is following. Shows up as "Projects Loved by Scratchers I'm Following" on the front page.  Returns an array of [project objects](definitions/project_object.md). [Requires authentication.](../etc/authentication.md)
 
 ### `GET /users/<username>/following/users/projects`
 
