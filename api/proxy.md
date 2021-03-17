@@ -32,6 +32,24 @@ Each item in any of those arrays is a project, and follows this format:
 }
 ```
 
-## `GET /proxy/users`
+### `GET /proxy/users/...`
 
-All of the `/proxy/users` endpoints have been replaced by new endpoints in [/users](users.md).  
+All of the `/proxy/users` endpoints have been replaced by new endpoints in [/users](users.md).
+
+### `POST /proxy/comments/project/<id>`
+
+Sends a new comment (top-level or reply) on the project. [Requires authentication.](../etc/authentication.md) The request body should be a JSON string following this format:
+
+```
+{
+    "content": /* Content of the comment */
+    "parent_id": /* ID of the comment to reply to, or empty string if top-level */
+    "commentee_id": /* ID of the user to mention at the start of the comment, or empty string if none */
+}
+```
+
+If successful, returns a [comment object](definitions/comment_object.md). If the comment is rejected, returns a [comment rejection object](definitions/comment_rejection_object.md). (Note this response will still be 200 OK.)
+
+### `DELETE /proxy/comments/project/<id>/comment/<id>`
+
+Deletes an existing comment on the project. [Requires authentication.](../etc/authentication.md) Returns an empty object.
