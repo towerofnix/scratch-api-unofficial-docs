@@ -22,7 +22,7 @@ The `rejected` property will be one of the following:
 - `"isMuted"`: posted too many bad comments and account has been muted for the day
 - `"isUnconstructive"`: content was detected as being mean or disrespectful
 - `"isDisallowed"`: tried to post on a page where comments are disabled
-- `"isIPMuted"`: comment sent from a network blocked for posting the community guidelines too many times
+- `"isIPMuted"`: comment sent from a network blocked for breaking the community guidelines too many times
 - `"isTooLong"`: content surpasses maximum comment length
 - `"isNotPermitted"`: user email address hasn't been confirmed yet
 
