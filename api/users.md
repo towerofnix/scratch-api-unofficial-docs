@@ -63,3 +63,24 @@ Returns an object in this format:
     "count": /* Number of messages the user currently has */
 }
 ```
+
+### `GET /users/<username>/projects/<id>/comments`
+
+Gets a list of top-level comments created on the project. Returns an array of [comment objects](definitions/comment_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request, but returns 20 by default.
+
+### `GET /users/<username>/projects/<id>/comments/<id>`
+
+Gets a single comment. Returns a [comment object](definitions/comment_object.md).
+
+Note that `reply_count` will always be zero when a comment is requested from this endpoint, even if that comment has replies.
+
+### `GET /user/<username>/projects/<id>/comments/<id>/replies`
+
+Gets a list of replies to the top-level comment. Returns an array of [comment objects](defintiions/comment_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request, but returns 20 by default.
+
+### Sending & deleting comments
+
+Comments are sent and deleted through the [/proxy](proxy.md) API:
+
+- [`POST /proxy/comments/project/<id>`](proxy.md#post-proxycommentprojectid)
+- [`DELETE /proxy/comments/project/<id>`](proxy.md#post-proxycommentprojectidcommentid)

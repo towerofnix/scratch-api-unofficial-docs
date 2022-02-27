@@ -11,6 +11,7 @@ A comment object looks like this:
         "image": /* The URL of the author's profile picure */
     }
     "parent_id": /* The parent comment's ID, or null if a top-level comment */
+    "commentee_id": /* The ID of the user replied to, or null if a top-level comment */
     "content": /* The text content of the comment */
     "datetime_created": /* The timestamp when the comment was sent */
     "datetime_modified": /* The timestamp when the comment was last modified */

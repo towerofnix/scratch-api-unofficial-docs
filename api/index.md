@@ -16,6 +16,7 @@ Unofficial documentation for the Scratch API. See [root index](..) for more info
 
 * [Activity Event Object](definitions/activity_event_object.md)
 * [Comment Object](definitions/comment_object.md)
+* [Comment Rejection Object](definitions/comment_rejection_object.md)
 * [Message Object](definitions/message_object.md)
 * [News Object](definitions/news_object.md)
 * [Project Object](definitions/project_object.md)
