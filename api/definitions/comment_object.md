@@ -9,6 +9,7 @@ A comment object looks like this:
         "id": /* The author's user ID */
         "username": /* The author's username */
         "image": /* The URL of the author's profile picure */
+        "scratchteam": /* Whether or not the author is a Scratch Team member */
     }
     "parent_id": /* The parent comment's ID, or null if a top-level comment */
     "commentee_id": /* The ID of the user replied to, or null if a top-level comment */

@@ -1,11 +1,18 @@
 # `/comments` API
 
-The comments API returns data related to comments made throughout the Scratch website.
+There aren't any endpoints under `/comments` at the time of writing, but you may be looking for these endpoints instead:
 
-### `GET /comments/project/<id>`
-
-Gets a list of top-level comments created on the project. Returns an array of [comment objects](definitions/comment_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request, but returns 20 by default.
-
-### `GET /comments/project/<project id>/<comment id>`
-
-Gets a list of replies to the comment created on the project. Returns an array of [comment objects](definitions/comment_object.md). [Limited](../etc/limits_and_offsets.md) to 40 results per request, but returns 20 by default.
+- Getting comments on a project:
+    - [`GET /users/<username>/projects/<id>/comments`](users.md#get-usersusernameprojectsidcomments): comments on a project
+    - [`GET /users/<username>/projects/<id>/comments/<id>`](users.md#get-usersusernameprojectsidcommentsid):
+    - [`GET /users/<username>/projects/<id>/comments/<id>/replies`](users.md#get-usersusernameprojectsidcommentsidreplies): replies to a comment on a project
+- Sending & deleting comments on a project:
+    - [`POST /proxy/comments/project/<id>`](proxy.md#post-proxycommentprojectid)
+    - [`DELETE /proxy/comments/project/<id>/comment/<id>`](proxy.md#post-proxycommentprojectidcommentid)
+- Getting comments on a studio:
+    - [`GET /studios/<id>/comments`](studios.md#get-studiosidcomments): comments on a studio
+    - [`GET /studios/<id>/comments/<id>`](studios.md#get-studiosidcommentsid):
+    - [`GET /studios/<id>/comments/<id>/replies`](studios.md#get-studiosidcommentsidreplies): replies to a comment on a studio
+- Sending & deleting comments on a studio:
+    - [`POST /proxy/comments/studio/<id>`](proxy.md#post-proxycommentsstudioid)
+    - [`DELETE /proxy/comments/studio/<id>/comment/<id>`](proxy.md#post-proxycommentsstudioidcommentid)
