@@ -21,7 +21,6 @@ A project object looks like this:
         "modified": /* The timestamp of the last time the project was modified */
     }
     "stats": {
-        "comments": /* The number of comments the project has */
         "loves": /* The number of love-its the project has */
         "favorites": /* The number of favorites the project has */
         "views": /* The number of views the project has */
