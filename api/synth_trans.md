@@ -12,4 +12,4 @@ Retrieves a list of supported language codes for translating text
 
 ### `GET synthesis-service.scratch.mit.edu/synth?locale=<locale>&gender=<gender>&text=<text>`
 
-Retrieves the synthesis of the input text as an audio file. Likely uses Amazon Polly
+Retrieves the synthesis of the input text as an audio file. Likely uses [Amazon Polly](https://aws.amazon.com/polly/)
