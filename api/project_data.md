@@ -2,11 +2,15 @@
 
 These retrieve all of the data and files needed for a scratch project/file.
 
-### `GET cdn.projects.scratch.mit.edu/<project id>/`
+## `https://cdn.projects.scratch.mit.edu/`
+
+### `GET /<project id>/`
 
 Retrieves the projects JSON data, which is where all of the code for a scratch project is stored.
 
-### `GET cdn.assets.scratch.mit.edu/internalapi/asset/<md5 file>/get/`
+## `https://cdn.assets.scratch.mit.edu/`
+
+### `GET /internalapi/asset/<md5 file>/get/`
 
 Retrieves the asset with the given file name. An asset is a costume, sound or other file used in a project.  Each asset in each project has a unique md5 id, which is used for referencing and retrieving it. 
 

@@ -11,6 +11,7 @@ Unofficial documentation for the Scratch API. See [root index](..) for more info
 * [`/proxy` API](proxy.md) - Miscellaneous utilities
 * [`/users` API](users.md) - Fetch user information
 * [`projects.` and `assets.` APIs](project_data.md) - Fetch code and assets used in projects
+* [`synthesis-service.` and `translation-service.` APIs](synth_trans.md) - Fetch translations and syntheses used by block extensions
 
 ### Object definitions
 
