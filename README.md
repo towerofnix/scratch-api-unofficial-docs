@@ -1,4 +1,4 @@
-*(Quick links to: [/api/ API reference](https://towerofnix.github.io/https://towerofnix.github.io/scratch-api-unofficial-docs/api/), [/etc/ additional documentation](https://towerofnix.github.io/scratch-api-unofficial-docs/etc/).)*
+*(Quick links to: [/api/ API reference](https://towerofnix.github.io/scratch-api-unofficial-docs/api/), [/etc/ additional documentation](https://towerofnix.github.io/scratch-api-unofficial-docs/etc/).)*
 
 Welcome to the Scratch API Unofficial Documentation! This wiki is an organized place to put all the information the community has gathered about the new Scratch API.
 
